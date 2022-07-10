@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Store + Retrieve</title>
+    <script src="localStoragePractice.js" defer></script>
+    <link rel="stylesheet" href="localStoragePractice.css">
+</head>
+
+<body>
+
+<div class="uberContainer">
+
+<div class="inputContainer">
+    
+    <div class='inputOptions'>
+        <h1>Input</h1>
+        <input class="gameName" placeholder="Game name">
+        <select class="gameConsole" name="gameConsole" id="gameConsole" placeholder="Console">
+            <option value=""></option>
+            <option value="NES">NES</option>
+            <option value="SNES">SNES</option>
+            <option value="N64">N64</option>
+            <option value="Gamecube">Gamecube</option>
+            <option value="Wii">Wii</option>
+            <option value="Wii U">Wii U</option>
+            <option value="Switch">Switch</option>
+            <option value="GameBoy">GameBoy</option>
+            <option value="GameBoy Color">GameBoy Color</option>
+            <option value="GameBoy Advance">GameBoy Advance</option>
+            <option value="DS">DS</option>
+            <option value="3DS">3DS</option>
+        </select>
+        <input type="number" class="releaseDate" placeholder="Release date">
+        <button class="addGameButton">Add game</button>
+    </div>
+
+    <div class="inputOptions">
+        <div class="buttonsBarButtons">
+        <button class="sortName">Sort name</button>
+        <button class="sortConsole">Sort console</button>
+        <button class="sortYear">Sort year</button>
+        </div>
+    </div>
+
+    <div class="inputOptions">
+        <div class="buttonsBarButtons">
+            <button class="saveButton">Save</button>
+            <button class="loadButton">Load</button>
+            <button class="clearButton">Clear</button>
+        </div>
+        
+    </div>
+
+    <div class="inputOptions">
+        <input class="filterTextbox" placeholder="Criteria">
+        <button class="filterName">Filter by name</button>
+        <button class="filterConsole">Filter by console</button>
+        <button class="filterRelease">Filter by release date</button>
+    </div>
+        
+
+    <div class="instructionsContainer">
+        <div class="instructions">
+            <h3>Enter a game's name, console, and release date above, and click 'Add game' to add it to the database.</h3>
+            <h3>Click an entry to remove it. Its information will be added to the input to allow you to edit and re-add it!</h3>
+            <h3>Click save, load, or clear to save data, load data, and clear the screen, respectively.</h3>
+            <h3>Data is stored in local storage.</h3>
+            <h3>To sort entries by name/year/system, [WIP]</h3>
+        </div>
+        <h2 class="closeButton">Toggle instructions</h2>
+    </div>
+
+</div>
+
+<div class="outputContainer">
+    <div class="titleContainer">
+        <h1>CartDex</h1>
+    </div>
+    <div class="outputInfoContainer">
+        <div class="outputName">
+            <h2 class="outputHeader">Name:</h2>
+        </div>
+
+        <div class="outputConsole">
+            <h2 class="outputHeader">Console:</h2>
+        </div>
+
+        <div class="outputRelease">
+            <h2 class="outputHeader">Release:</h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
